@@ -45,7 +45,7 @@ lineage_table_origin <- norwich %>%
 unique_admin2_postcode <- unique(norwich$adm2_private) %>%
 .[!is.na(.)] #Remove NA values
 
-#Original data downloaded from https://www.opendoorlogistics.com/wp-content/uploads/Data/UK-postcode-boundaries-Jan-2015.zip
+#You need to download data here https://www.opendoorlogistics.com/wp-content/uploads/Data/UK-postcode-boundaries-Jan-2015.zip
 england <- readRDS("data/england_postcode.rds")
 
 england@data$id = getSpPPolygonsIDSlots(england)
